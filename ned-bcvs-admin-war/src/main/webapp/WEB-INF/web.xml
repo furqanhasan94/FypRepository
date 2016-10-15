@@ -9,6 +9,20 @@ http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
     
+			<!-- JSF Mapping -->
+	  <servlet>
+		<servlet-name>facesServlet</servlet-name>
+		<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	  </servlet>
+	  <servlet-mapping>
+		<servlet-name>facesServlet</servlet-name>
+		<url-pattern>*.jsf</url-pattern>
+	  </servlet-mapping>
+	  <servlet-mapping>
+		<servlet-name>facesServlet</servlet-name>
+		<url-pattern>*.xhtml</url-pattern>
+	  </servlet-mapping>
     
     
 </web-app>
