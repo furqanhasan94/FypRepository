@@ -41,23 +41,19 @@ public class FileUploaderBean implements FileUploaderBeanLocal {
                         break;    
                     case("candidate"): 
                             ps = conn.prepareStatement("LOAD DATA LOCAL INFILE ? INTO TABLE candidate FIELDS TERMINATED BY ','"
-                        + " LINES TERMINATED BY '\n' (VoterId, VoterFirstName, VoterLastName, VoterConttactNumber,"
-                        + " ConstituencyID, VoterBiometrics) ");
+                        + " LINES TERMINATED BY '\n' (VoterId, ConstituencyId, ElectionSymbolId) ");
                         break;    
                     case("constituency"): 
                             ps = conn.prepareStatement("LOAD DATA LOCAL INFILE ? INTO TABLE constituency FIELDS TERMINATED BY ','"
-                        + " LINES TERMINATED BY '\n' (VoterId, VoterFirstName, VoterLastName, VoterConttactNumber,"
-                        + " ConstituencyID, VoterBiometrics) ");
+                        + " LINES TERMINATED BY '\n' (ConstituencyId, ConstituencyTypeId, ConstituencyName, CandidateId, NoOfVoters) ");
                         break;
                     case("constituencytype"): 
                             ps = conn.prepareStatement("LOAD DATA LOCAL INFILE ? INTO TABLE constituencytype FIELDS TERMINATED BY ','"
-                        + " LINES TERMINATED BY '\n' (VoterId, VoterFirstName, VoterLastName, VoterConttactNumber,"
-                        + " ConstituencyID, VoterBiometrics) ");
+                        + " LINES TERMINATED BY '\n' (ConstituencyTypeId, ConstituencyTypeName) ");
                         break;
                     case("electionparty"): 
                             ps = conn.prepareStatement("LOAD DATA LOCAL INFILE ? INTO TABLE electionparty FIELDS TERMINATED BY ','"
-                        + " LINES TERMINATED BY '\n' (VoterId, VoterFirstName, VoterLastName, VoterConttactNumber,"
-                        + " ConstituencyID, VoterBiometrics) ");
+                        + " LINES TERMINATED BY '\n' (ElectionPartyId, ElectionPartyName, ElectionSymbolId) ");
                         break;
                 }
                 
