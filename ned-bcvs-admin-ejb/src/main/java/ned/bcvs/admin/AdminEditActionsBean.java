@@ -31,7 +31,7 @@ public class AdminEditActionsBean implements AdminEditActionsLocal {
     @jdbcfypdb
     Connection conn;
 
-    @TransactionAttribute(TransactionAttributeType.NOT_SUPPORTED)
+    //@TransactionAttribute(TransactionAttributeType.NOT_SUPPORTED)
     public List<ConstituencyType> getConstituencyTypes(String constituencyName) {
         final List<ConstituencyType> constituencyTypes = new ArrayList<>();
         try (PreparedStatement ps = conn.prepareStatement("Select * from ConstituencyType")) {

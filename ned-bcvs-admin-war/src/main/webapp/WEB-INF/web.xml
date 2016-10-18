@@ -23,6 +23,12 @@ http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 		<servlet-name>facesServlet</servlet-name>
 		<url-pattern>*.xhtml</url-pattern>
 	  </servlet-mapping>
-    
-    
+          
+     <context-param> 
+        <description>Location to store uploaded file</description> 
+        <param-name>file-upload</param-name> 
+        <param-value>
+             D:\glassfish12October\glassfish-4.0\glassfish4\glassfish\domains\domain1\applications\
+         </param-value> 
+    </context-param>
 </web-app>

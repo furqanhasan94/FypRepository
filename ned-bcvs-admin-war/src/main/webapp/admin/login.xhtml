@@ -77,23 +77,43 @@
 			    	<h3 class="panel-title">Please sign in</h3>
 			 	</div>
 			  	<div class="panel-body">
-			    	<form accept-charset="UTF-8" role="form">
+<!--			    	<form accept-charset="UTF-8" role="form" >
                     <fieldset>
 			    	  	<div class="form-group">
-                                            <input class="form-control" placeholder="User Name" name="email" type="text"></input>
+                                            <input class="form-control" placeholder="User Name" name="email" type="text" value="#{adminLoginBean.user}" ></input>
 			    		</div>
 			    		<div class="form-group">
-                                            <input class="form-control" placeholder="Password" name="password" type="password" value=""></input>
+                                            <input class="form-control" placeholder="Password" name="password" type="password" value="#{adminLoginBean.pwd}"></input>
 			    		</div>
 			    		<div class="checkbox">
 			    	    	<label>
                                             <input name="remember" type="checkbox" value="Remember Me"> Remember Me</input>
 			    	    	</label>
 			    	    </div>
-                        <input class="btn btn-lg btn-success btn-block" type="submit" value="Login"></input>
+                                        <input class="btn btn-lg btn-success btn-block" type="submit" value="Login"></input>
+                                    <h:commandButton action="#{adminLoginBean.validateUsernamePassword()}"
+                                                class="btn btn-lg btn-success btn-block" type="submit" value="Login"/>
 			    	</fieldset>
-			      	</form>
-			    </div>
+			      	</form>-->
+        <h:form>
+		<h3>JSF Login Logout</h3>
+		<h:outputText value="Username" />
+                <h:inputText id="username" value="#{adminLoginBean.user}"></h:inputText>
+		<h:message for="username"></h:message>
+		<br /><br />
+		
+		<h:outputText value="Password" />
+                <h:inputSecret id="password" value="#{adminLoginBean.pwd}"></h:inputSecret>
+		<h:message for="password"></h:message>
+		<br /><br />
+		
+                
+                <h:commandButton action="#{adminLoginBean.validateUsernamePassword()}"
+			value="Login"></h:commandButton>
+	</h:form>
+                <h:commandButton action="bhaloo"
+			value="bhaloo"/>
+                                </div>
 			</div>
 		</div>
 	</div>

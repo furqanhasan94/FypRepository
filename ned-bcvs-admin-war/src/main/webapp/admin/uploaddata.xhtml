@@ -23,7 +23,8 @@
     <h:outputScript name="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js" />
     <h:outputScript name="http://www.prepbootstrap.com/Content/js/gridData.js"></h:outputScript>
 </h:head>
-<h:body id="body">
+    <!--rendered="#{adminLoginBean.session != null}"-->
+<h:body id="body" >
     <div id="wrapper">
           <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="navbar-header">
@@ -79,15 +80,56 @@
         <div class="panel-body">
 
           <!-- Standar Form -->
-          <h4>Select files from your computer</h4>
-          <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
+          <h4>Select Voter.csv file from your computer</h4>
+          <form action="voteruploadservlet" method="post" enctype="multipart/form-data" id="js-upload-form">
             <div class="form-inline">
               <div class="form-group">
-                <input type="file" name="files[]" id="js-upload-files" ></input>
+                <input type="file" name="Upload Voters" id="js-voter-upload-files" ></input>
               </div>
-              <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Upload files</button>
+              <button type="submit" class="btn btn-sm btn-primary" id="js-voter-upload-submit">Upload files</button>
             </div>
           </form>
+
+          <h4>Select Candidate.csv file from your computer</h4>
+          <form action="candidatefileupload" method="post" enctype="multipart/form-data" id="js-upload-form">
+            <div class="form-inline">
+              <div class="form-group">
+                <input type="file" name="Upload candidates" id="js-candidate-upload-files" ></input>
+              </div>
+              <button type="submit" class="btn btn-sm btn-primary" id="js-candidate-upload-submit">Upload files</button>
+            </div>
+          </form>
+
+          <h4>Select Constituencies.csv file from your computer</h4>
+          <form action="constituencyfileupload" method="post" enctype="multipart/form-data" id="js-upload-form">
+            <div class="form-inline">
+              <div class="form-group">
+                <input type="file" name="Upload Constituencies" id="js-constituency-upload-files" ></input>
+              </div>
+              <button type="submit" class="btn btn-sm btn-primary" id="js-constituency-upload-submit">Upload files</button>
+            </div>
+          </form>
+          
+          <h4>Select ConstituencyType.csv file from your computer</h4>
+          <form action="constituencytypefileupload" method="post" enctype="multipart/form-data" id="js-upload-form">
+            <div class="form-inline">
+              <div class="form-group">
+                <input type="file" name="Upload Constituency types" id="js-constituencytype-upload-files" ></input>
+              </div>
+              <button type="submit" class="btn btn-sm btn-primary" id="js-constituencytype-upload-submit">Upload files</button>
+            </div>
+          </form>
+          
+          <h4>Select ElectionParties.csv file from your computer</h4>
+          <form action="electionpartyfileupload" method="post" enctype="multipart/form-data" id="js-upload-form">
+            <div class="form-inline">
+              <div class="form-group">
+                <input type="file" name="Upload Eection Parties" id="js-electionparties-upload-files" ></input>
+              </div>
+              <button type="submit" class="btn btn-sm btn-primary" id="js-electionparties-upload-submit">Upload files</button>
+            </div>
+          </form>
+
 
           <!-- Drop Zone -->
           <h4>Or drag and drop files below</h4>

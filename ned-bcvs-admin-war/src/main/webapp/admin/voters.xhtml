@@ -23,7 +23,7 @@
     <h:outputScript name="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js" />
     <h:outputScript name="http://www.prepbootstrap.com/Content/js/gridData.js"></h:outputScript>
 </h:head>
-<h:body id="body">
+<h:body id="body" rendered="#{adminLoginBean.session != null}">
     <div id="wrapper">
           <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="navbar-header">

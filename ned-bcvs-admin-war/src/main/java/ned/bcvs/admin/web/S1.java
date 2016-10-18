@@ -29,7 +29,7 @@ public class S1 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         PrintWriter w = resp.getWriter();
-        w.println(adminEditActionsLocal.getConstituencyTypes("ABC").toString());
+        w.println(adminEditActionsLocal.getConstituencyTypes("ABC"));
         w.close();
     }
 }
