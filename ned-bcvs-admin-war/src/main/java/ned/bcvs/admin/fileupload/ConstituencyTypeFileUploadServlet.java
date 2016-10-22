@@ -22,7 +22,7 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
  *
  * @author StackHouse
  */
-@WebServlet(urlPatterns = "/admin/constituencytypefileupload")
+@WebServlet(urlPatterns = "/adminn/constituencytypefileupload")
 public class ConstituencyTypeFileUploadServlet extends HttpServlet{
     
     private boolean isMultipart;

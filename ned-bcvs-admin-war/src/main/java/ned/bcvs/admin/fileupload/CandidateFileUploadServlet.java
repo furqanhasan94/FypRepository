@@ -22,7 +22,7 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
  *
  * @author StackHouse
  */
-@WebServlet(urlPatterns = "/admin/candidatefileupload")
+@WebServlet(urlPatterns = "/adminn/candidatefileupload")
 public class CandidateFileUploadServlet extends HttpServlet{
     private boolean isMultipart;
     private String filePath;

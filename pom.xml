@@ -42,6 +42,13 @@
             <version>2.5</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.neemre.btcd-cli4j</groupId>
+            <artifactId>btcd-cli4j-core</artifactId>
+            <version>9.5.94</version>
+            <type>jar</type>
+        </dependency>
+
     </dependencies>
     
     

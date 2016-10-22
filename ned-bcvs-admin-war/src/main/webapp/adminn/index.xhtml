@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+    <h:head>
+    <!-- END HEAD -->
+    <!-- PAGE LEVEL STYLES -->
+    <h:outputStylesheet name="./css/layout2.css" />
+    <h:outputStylesheet name="./plugins/flot/examples/examples.css"/>
+    <h:outputStylesheet name="./plugins/timeline/timeline.css" />
+    </h:head>
+
+    <!-- BEGIN BODY -->
+<!--<body class="padTop53 " >-->
+<h:body >
+      <!-- PAGE LEVEL SCRIPTS -->
+     <h:outputScript name="./plugins/flot/jquery.flot.js"/>
+     <h:outputScript name="./plugins/flot/jquery.flot.resize.js"/>
+     <h:outputScript name="./plugins/flot/jquery.flot.time.js"/>
+     <h:outputScript name="./plugins/flot/jquery.flot.stack.js"/>
+     <h:outputScript name="./js/for_index.js"/>
+    <!-- END PAGE LEVEL SCRIPTS -->
+
+   
+
+   
+    <!-- MAIN WRAPPER -->
+    
+    <div id="wrap" >
+        
+
+        <!-- HEADER SECTION -->
+        <ui:include src="header.xhtml" />
+        <!-- END HEADER SECTION -->
+
+
+
+       
+
+
+
+        <!--PAGE CONTENT -->
+        <div >
+                            <!--BLOCK SECTION -->
+            <div class="inner" style="min-height: 700px;">
+              
+                        <div style="text-align: center;">
+
+                            <div>
+                                    <h1> E-Bait Dashboard </h1>
+                            </div>
+                           
+                            <a class="quick-btn" href="#">
+                                <i class="icon-check icon-2x"></i>
+                                <span> Products</span>
+                                <span class="label label-danger">2</span>
+                            </a>
+
+                            <a class="quick-btn" href="#">
+                                <i class="icon-check icon-2x"></i>
+                                <span>Messages</span>
+                                <span class="label label-success">456</span>
+                            </a>
+                            <a class="quick-btn" href="#">
+                                <i class="icon-signal icon-2x"></i>
+                                <span>Profit</span>
+                                <span class="label label-warning">+25</span>
+                            </a>
+                            <a class="quick-btn" href="#">
+                                <i class="icon-external-link icon-2x"></i>
+                                <span>value</span>
+                                <span class="label btn-metis-2">3.14159265</span>
+                            </a>
+                            <a class="quick-btn" href="#">
+                                <i class="icon-lemon icon-2x"></i>
+                                <span>tasks</span>
+                                <span class="label btn-metis-4">107</span>
+                            </a>
+                            <a class="quick-btn" href="#">
+                                <i class="icon-bolt icon-2x"></i>
+                                <span>Tickets</span>
+                                <span class="label label-default">20</span>
+                            </a>
+                        </div>
+            </div>  <!--END BLOCK SECTION -->
+        </div> <!--END PAGE CONTENT -->   
+    </div> <!--Wrapp class div end -->
+  
+
+    <!--END MAIN WRAPPER -->
+
+    <!-- FOOTER -->
+ <ui:include src="footer.xhtml" />
+   
+</h:body>
+
+    <!-- END BODY -->
+</html>

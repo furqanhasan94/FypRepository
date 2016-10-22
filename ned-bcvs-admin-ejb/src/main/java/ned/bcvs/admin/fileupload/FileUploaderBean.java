@@ -36,12 +36,12 @@ public class FileUploaderBean implements FileUploaderBeanLocal {
                 switch(tableName){
                     case("voter"): 
                             ps = conn.prepareStatement("LOAD DATA LOCAL INFILE ? INTO TABLE voter FIELDS TERMINATED BY ','"
-                        + " LINES TERMINATED BY '\n' (VoterId, VoterFirstName, VoterLastName, VoterConttactNumber,"
+                        + " LINES TERMINATED BY '\n' (VoterId, VoterFirstName, VoterLastName, VoterContactNumber,"
                         + " ConstituencyID, VoterBiometrics) ");
                         break;    
                     case("candidate"): 
                             ps = conn.prepareStatement("LOAD DATA LOCAL INFILE ? INTO TABLE candidate FIELDS TERMINATED BY ','"
-                        + " LINES TERMINATED BY '\n' (VoterId, ConstituencyId, ElectionSymbolId) ");
+                        + " LINES TERMINATED BY '\n' (firstName, lastName, VoterId, ConstituencyId, ElectionSymbolId) ");
                         break;    
                     case("constituency"): 
                             ps = conn.prepareStatement("LOAD DATA LOCAL INFILE ? INTO TABLE constituency FIELDS TERMINATED BY ','"

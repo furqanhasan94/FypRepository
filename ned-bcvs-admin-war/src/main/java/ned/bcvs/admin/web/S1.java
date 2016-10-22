@@ -14,7 +14,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import ned.bcvs.admin.AdminEditActionsLocal;
+import ned.bcvs.admin.bean_local_interface.AdminEditActionsLocal;
 
 /**
  *

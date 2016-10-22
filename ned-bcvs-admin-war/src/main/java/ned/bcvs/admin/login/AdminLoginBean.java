@@ -12,7 +12,7 @@ import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
 import javax.inject.Named;
 import javax.servlet.http.HttpSession;
-import ned.bcvs.admin.AdminLoginValidatorLocal;
+import ned.bcvs.admin.bean_local_interface.AdminLoginValidatorLocal;
 
 /**
  *

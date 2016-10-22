@@ -1,11 +1,12 @@
-$(document).ready(function(){
-  $(document).mousemove(function(e){
-     TweenLite.to($('body'), 
-        .5, 
-        { css: 
-            {
-                backgroundPosition: ""+ parseInt(event.pageX/8) + "px "+parseInt(event.pageY/'12')+"px, "+parseInt(event.pageX/'15')+"px "+parseInt(event.pageY/'15')+"px, "+parseInt(event.pageX/'30')+"px "+parseInt(event.pageY/'30')+"px"
-            }
-        });
-  });
+﻿$(function () {
+    
+    $('.list-inline li > a').click(function () {
+        var activeForm = $(this).attr('href') + ' > form';
+        //console.log(activeForm);
+        $(activeForm).addClass('magictime swap');
+        //set timer to 1 seconds, after that, unload the magic animation
+        setTimeout(function () {
+            $(activeForm).removeClass('magictime swap');
+        }, 1000);
+    });
 });

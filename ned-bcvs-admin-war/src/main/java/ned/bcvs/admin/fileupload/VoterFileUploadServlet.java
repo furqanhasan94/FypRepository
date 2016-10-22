@@ -24,7 +24,7 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
  *
  * @author StackHouse
  */
-@WebServlet(urlPatterns = "/admin/voteruploadservlet")
+@WebServlet(urlPatterns = "/adminn/voteruploadservlet")
 public class VoterFileUploadServlet extends HttpServlet{
     
     private boolean isMultipart;
