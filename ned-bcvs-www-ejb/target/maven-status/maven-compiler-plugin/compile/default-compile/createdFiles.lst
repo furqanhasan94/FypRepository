@@ -1,0 +1,5 @@
+ned\bcvs\www\cdi\producers\DataSourceProducer.class
+ned\bcvs\www\dao\VoterDao.class
+ned\bcvs\www\cdi\qualifier\jdbcfypdb.class
+ned\bcvs\www\beans\VoterEnquiryBean.class
+ned\bcvs\www\beans_local_interface\VoterEnquiryLocal.class

@@ -22,7 +22,7 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
  *
  * @author StackHouse
  */
-@WebServlet(urlPatterns = "/admin/constituencyfileupload")
+@WebServlet(urlPatterns = "/adminn/constituencyfileupload")
 public class ConstituencyFileUploadServlet extends HttpServlet{
     
     private boolean isMultipart;
@@ -105,7 +105,7 @@ public class ConstituencyFileUploadServlet extends HttpServlet{
                   out.println("Uploaded Filename: " + fileName + "<br>");
                }
             }
-            //calling the ejb method to save voter.csv file to data base
+            //calling the ejb method to save constituency.csv file to data base
             out.println(upbean.fileDbUploader(filePath + fileName, "constituency"));
             out.println("</body>");
             out.println("</html>");

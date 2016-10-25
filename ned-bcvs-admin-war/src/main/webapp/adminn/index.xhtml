@@ -10,11 +10,14 @@
     <h:outputStylesheet name="./css/layout2.css" />
     <h:outputStylesheet name="./plugins/flot/examples/examples.css"/>
     <h:outputStylesheet name="./plugins/timeline/timeline.css" />
+    <h:outputStylesheet name="./plugins/timeline/dashboard.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    
     </h:head>
 
     <!-- BEGIN BODY -->
 <!--<body class="padTop53 " >-->
-<h:body >
+<h:body styleClass="padTop53">
       <!-- PAGE LEVEL SCRIPTS -->
      <h:outputScript name="./plugins/flot/jquery.flot.js"/>
      <h:outputScript name="./plugins/flot/jquery.flot.resize.js"/>
@@ -42,49 +45,37 @@
 
 
         <!--PAGE CONTENT -->
-        <div >
-                            <!--BLOCK SECTION -->
-            <div class="inner" style="min-height: 700px;">
-              
-                        <div style="text-align: center;">
-
-                            <div>
-                                    <h1> E-Bait Dashboard </h1>
-                            </div>
-                           
-                            <a class="quick-btn" href="#">
-                                <i class="icon-check icon-2x"></i>
-                                <span> Products</span>
-                                <span class="label label-danger">2</span>
-                            </a>
-
-                            <a class="quick-btn" href="#">
-                                <i class="icon-check icon-2x"></i>
-                                <span>Messages</span>
-                                <span class="label label-success">456</span>
-                            </a>
-                            <a class="quick-btn" href="#">
-                                <i class="icon-signal icon-2x"></i>
-                                <span>Profit</span>
-                                <span class="label label-warning">+25</span>
-                            </a>
-                            <a class="quick-btn" href="#">
-                                <i class="icon-external-link icon-2x"></i>
-                                <span>value</span>
-                                <span class="label btn-metis-2">3.14159265</span>
-                            </a>
-                            <a class="quick-btn" href="#">
-                                <i class="icon-lemon icon-2x"></i>
-                                <span>tasks</span>
-                                <span class="label btn-metis-4">107</span>
-                            </a>
-                            <a class="quick-btn" href="#">
-                                <i class="icon-bolt icon-2x"></i>
-                                <span>Tickets</span>
-                                <span class="label label-default">20</span>
-                            </a>
+        <div  >
+<!--BLOCK SECTION -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12" >
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <span class="glyphicon glyphicon-bookmark"></span> Quick Shortcuts</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-12">
+                          <a href="dataupload.xhtml" class="btn btn-danger btn-lg btn-block " role="button"><span class="glyphicon glyphicon-file"></span> <br/>Upload Data</a>
+                          <center><a href="voters.xhtml" class="btn btn-warning btn-lg" role="button"><span class="glyphicon glyphicon-bookmark"></span> <br/>Voters</a>
+                          <a href="candidates.xhtml" class="btn btn-primary btn-lg" role="button"><span class="glyphicon glyphicon-user"></span> <br/>Candidates</a>
+                          <a href="#" class="btn btn-warning btn-lg" role="button"><span class="glyphicon glyphicon-user"></span> <br/>Constituencies</a>
+                          <a href="#" class="btn btn-success btn-lg" role="button"><span class="glyphicon glyphicon-user"></span> <br/>Constituency-Types</a>
+                          <a href="#" class="btn btn-info btn-lg" role="button"><span class="glyphicon glyphicon-file"></span> <br/>Election Parties</a>
+                          <a href="#" class="btn btn-primary btn-lg" role="button"><span class="glyphicon glyphicon-picture"></span> <br/>Election Party Symbols</a>
+                          </center>
                         </div>
-            </div>  <!--END BLOCK SECTION -->
+                    </div>
+<!--                    <a href="http://www.jquery2dotnet.com/" class="btn btn-success btn-lg btn-block" role="button"><span class="glyphicon glyphicon-globe"></span> Website</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--END BLOCK SECTION -->
         </div> <!--END PAGE CONTENT -->   
     </div> <!--Wrapp class div end -->
   

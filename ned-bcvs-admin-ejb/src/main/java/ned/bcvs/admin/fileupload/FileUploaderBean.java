@@ -41,11 +41,11 @@ public class FileUploaderBean implements FileUploaderBeanLocal {
                         break;    
                     case("candidate"): 
                             ps = conn.prepareStatement("LOAD DATA LOCAL INFILE ? INTO TABLE candidate FIELDS TERMINATED BY ','"
-                        + " LINES TERMINATED BY '\n' (firstName, lastName, VoterId, ConstituencyId, ElectionSymbolId) ");
+                        + " LINES TERMINATED BY '\n' (candidateId ,firstName, lastName, VoterId, ConstituencyId, ElectionSymbolId, candidateType) ");
                         break;    
                     case("constituency"): 
                             ps = conn.prepareStatement("LOAD DATA LOCAL INFILE ? INTO TABLE constituency FIELDS TERMINATED BY ','"
-                        + " LINES TERMINATED BY '\n' (ConstituencyId, ConstituencyTypeId, ConstituencyName, CandidateId, NoOfVoters) ");
+                        + " LINES TERMINATED BY '\n' (ConstituencyId, ConstituencyTypeId, ConstituencyName, NoOfCandidates, NoOfVoters) ");
                         break;
                     case("constituencytype"): 
                             ps = conn.prepareStatement("LOAD DATA LOCAL INFILE ? INTO TABLE constituencytype FIELDS TERMINATED BY ','"
@@ -67,7 +67,7 @@ public class FileUploaderBean implements FileUploaderBeanLocal {
                 Logger.getLogger(FileUploaderBean.class.getName()).log(Level.SEVERE, null, ex);
             }
 
-            return "saved Voter.csv in Data base";
+            return "saved " + tableName + ".csv in Data base";
         }
     
 

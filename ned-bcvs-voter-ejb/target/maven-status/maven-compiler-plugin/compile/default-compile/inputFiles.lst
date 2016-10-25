@@ -1,0 +1,7 @@
+C:\Users\StackHouse\Documents\NetBeansProjects\FypRepository\ned-bcvs-voter-ejb\src\main\java\ned\bcvs\voter\voting_local\VotingBackEndLocal.java
+C:\Users\StackHouse\Documents\NetBeansProjects\FypRepository\ned-bcvs-voter-ejb\src\main\java\ned\bcvs\voter\multi_chain_client\MultiChainClient.java
+C:\Users\StackHouse\Documents\NetBeansProjects\FypRepository\ned-bcvs-voter-ejb\src\main\java\ned\bcvs\voter\dao\VoterDao.java
+C:\Users\StackHouse\Documents\NetBeansProjects\FypRepository\ned-bcvs-voter-ejb\src\main\java\ned\bcvs\voter\dao\CandidateDao.java
+C:\Users\StackHouse\Documents\NetBeansProjects\FypRepository\ned-bcvs-voter-ejb\src\main\java\ned\bcvs\voter\cdi\qualifier\jdbcfypdb.java
+C:\Users\StackHouse\Documents\NetBeansProjects\FypRepository\ned-bcvs-voter-ejb\src\main\java\ned\bcvs\voter\voting\VotingBackEndBean.java
+C:\Users\StackHouse\Documents\NetBeansProjects\FypRepository\ned-bcvs-voter-ejb\src\main\java\ned\bcvs\voter\cdi\producers\DataSourceProducer.java

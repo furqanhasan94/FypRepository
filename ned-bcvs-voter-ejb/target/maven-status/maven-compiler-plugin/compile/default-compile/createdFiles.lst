@@ -1,0 +1,7 @@
+ned\bcvs\voter\cdi\producers\DataSourceProducer.class
+ned\bcvs\voter\voting_local\VotingBackEndLocal.class
+ned\bcvs\voter\dao\CandidateDao.class
+ned\bcvs\voter\multi_chain_client\MultiChainClient.class
+ned\bcvs\voter\voting\VotingBackEndBean.class
+ned\bcvs\voter\cdi\qualifier\jdbcfypdb.class
+ned\bcvs\voter\dao\VoterDao.class

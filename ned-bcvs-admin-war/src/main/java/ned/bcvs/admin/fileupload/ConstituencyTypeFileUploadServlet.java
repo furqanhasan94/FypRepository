@@ -89,7 +89,7 @@ public class ConstituencyTypeFileUploadServlet extends HttpServlet{
                {
                   // Get the uploaded file parameters
                   String fieldName = fi.getFieldName();
-                  String fileName = fi.getName();
+                  fileName = fi.getName();
                   String contentType = fi.getContentType();
                   boolean isInMemory = fi.isInMemory();
                   long sizeInBytes = fi.getSize();
@@ -107,6 +107,7 @@ public class ConstituencyTypeFileUploadServlet extends HttpServlet{
             }
             
             //calling the ejb method to save voter.csv file to data base
+            System.out.println("%%%%%%% " + filePath + fileName);
             out.println(upbean.fileDbUploader(filePath + fileName, "constituencytype"));
             out.println("</body>");
             out.println("</html>");
